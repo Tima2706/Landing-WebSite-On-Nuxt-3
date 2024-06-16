@@ -1,0 +1,59 @@
+@import "../../assets/scss/mixins";
+
+.action-bar {
+  z-index: 8;
+  background: linear-gradient(90deg, #000000 30%, #1C2734 73%);
+  max-height: 60px;
+  padding: 10px 0 11px 0;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__link{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .25s;
+    &:hover {
+      color: goldenrod;
+    }
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0584FE;
+    padding: 9px 18px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: .25s;
+    @include breakpoint('xl') {
+      margin-right: 24px;
+    }
+    &:hover {
+      background: #FFFFFF;
+      color: #0077D9;
+      transform: scale(1.1);
+      border: 1px solid #0077D9;
+    }
+    &:active {
+      transform: scale(1.051);
+    }
+  }
+}
+@media (max-width: 768px){
+  .action-bar{
+    max-height: 150px;
+  }
+}

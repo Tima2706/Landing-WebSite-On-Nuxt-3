@@ -1,0 +1,4 @@
+<template>
+  <notifications/>
+ <NuxtLayout/>
+</template>

@@ -1,0 +1,20 @@
+@import "mixins";
+.main-page {
+  padding: 20px 0;
+}
+.container {
+  margin: auto;
+
+  @include breakpoint(lg) {
+    max-width: 900px;
+  }
+
+  @include breakpoint(xl) {
+    max-width: 1200px;
+  }
+
+  @include breakpoint(xxl) {
+    max-width: 1300px;
+  }
+
+}
